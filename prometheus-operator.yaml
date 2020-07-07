@@ -1,0 +1,15 @@
+# prometheus-operator.yaml
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: prometheus-operator
+  namespace: core
+spec:
+  chart:
+    repository: https://hub.helm.sh/charts/stable
+    name: prometheus-operator
+    version: 0.38.1
+  values:
+    apiService:
+      create: true
