@@ -7,7 +7,7 @@ metadata:
   namespace: core
 spec:
   chart:
-    repository: https://github.com/coreos/
+    repository: https://kubernetes-charts.storage.googleapis.com
     name: prometheus-operator
     version: 8.15.10
   values:
