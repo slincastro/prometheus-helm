@@ -19,7 +19,7 @@ spec:
       ##
       defaultDashboardsEnabled: true
 
-      adminPassword: example
+      adminPassword: example1
 
       ingress:
         ## If true, Grafana Ingress will be created
