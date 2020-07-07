@@ -7,8 +7,8 @@ metadata:
   namespace: core
 spec:
   chart:
-    repository: https://hub.helm.sh/charts/
-    name: stable/prometheus-operator
+    repository: https://github.com/coreos/
+    name: prometheus-operator
     version: 8.15.10
   values:
     apiService:
