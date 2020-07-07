@@ -1,0 +1,15 @@
+# metrics-server.yaml
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: metrics-server
+  namespace: core
+spec:
+  chart:
+    repository: https://charts.bitnami.com/bitnami
+    name: metrics-server
+    version: 4.2.0
+  values:
+    apiService:
+      create: true
